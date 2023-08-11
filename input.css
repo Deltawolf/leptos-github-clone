@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Lugrasimo&family=Roboto:wght@400;700;900&family=Tangerine&display=swap');
+@font-face { font-family: Fontin; src: url('/assets/fonts/Fontin-Regular.otf'); } 
+@font-face { font-family: Fontin; font-weight: bold; src: url('/assets/fonts/Fontin-Bold.otf'); } 
+@font-face { font-family: Fontin; font-weight: italic; src: url('/assets/fonts/Fontin-Italic.otf'); } 
+@font-face { font-family: Fontin-smallcaps; font-weight: italic; src: url('/assets/fonts/Fontin-SmallCaps.otf'); } 
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+@layer components {
+    .header-button {
+        @apply border-2 border-slate-300 p-2 shadow-none rounded-md whitespace-nowrap text-left flex justify-center items-center;
+    }
+    .UnderlineNav-item {
+
+        @apply flex w-full h-full justify-center items-center rounded-md gap-4 m-0 hover:bg-[#e8ecef];
+
+    }
+
+    .content-button {
+        @apply border-[1px] drop-shadow-md border-slate-300 bg-[#f6f8fa] rounded-md p-2
+    }
+
+    .repo-card {
+        @apply border-t-[1px] border-slate-300 p-2 shadow-none whitespace-nowrap text-left flex justify-center items-center;
+    }
+}
+.text-shadow {
+
+      text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+

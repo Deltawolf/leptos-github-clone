@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="155" height="30">
+      <defs>
+        <linearGradient id="gradient-615770334" x1="0" x2="0" y1="1" y2="0">
+          <stop offset="0%" stop-color="var(--color-calendar-graph-day-L1-bg)"/>
+          <stop offset="10%" stop-color="var(--color-calendar-graph-day-L2-bg)"/>
+          <stop offset="25%" stop-color="var(--color-calendar-graph-day-L3-bg)"/>
+          <stop offset="50%" stop-color="var(--color-calendar-graph-day-L4-bg)"/>
+        </linearGradient>
+        <mask id="sparkline-615770334" x="0" y="0" width="155" height="28">
+          <polyline transform="translate(0, 28) scale(1,-1)" points="0,9 3,1 6,7 9,3 12,12 15,4 18,8 21,8 24,5 27,5 30,4 33,1 36,13 39,1 42,1 45,15 48,26 51,12 54,6 57,5 60,11 63,6 66,1 69,1 72,11 75,5 78,1 81,2 84,1 87,15 90,3 93,7 96,6 99,15 102,1 105,1 108,1 111,1 114,1 117,1 120,1 123,1 126,1 129,1 132,1 135,1 138,1 141,1 144,1 147,1 150,1 153,1 " fill="transparent" stroke="#8cc665" stroke-width="2">
+        </polyline></mask>
+      </defs>
+
+      <g transform="translate(0, 0)">
+        <rect x="0" y="-2" width="155" height="30" style="stroke: none; fill: url(#gradient-615770334); mask: url(#sparkline-615770334)"/>
+      </g>
+    </svg>

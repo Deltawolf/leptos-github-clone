@@ -6,7 +6,7 @@ use crate::components::*;
 pub fn Overview(cx: Scope) -> impl IntoView {
 
     view!{cx,
-        <div id="container" class="flex flex-col">
+        <div id="container" class="flex flex-col gap-2">
             <span>Pinned</span>
             <div id="repos">
                 <div class="flex w-full gap-4">
@@ -44,12 +44,12 @@ pub fn OverviewRepo(cx: Scope) -> impl IntoView {
     view! {cx,
 
         
-        <button class="header-button flex flex-col p-4 w-full items-start">
+        <button class="header-button border-[1px] flex flex-col p-4 w-full items-start">
 
             <div class="inline-flex gap-2 items-center">
                 <Octicon edge_length=16 paths=vec![repositories_icon]/>
                 <span class="text-[#0969da]">leptos-rs/<b>leptos</b></span>
-                <span class="header-button rounded-full text-xs">Public</span>
+                <span class="header-button rounded-full text-xs px-[6px] py-[1.5px] text-slate-500 border-[1px]">Public</span>
             </div>
         <span class="text-xs text-[#656d76] mt-4">Build fast web applications with Rust.</span>
         <div class="inline-flex gap-4 mt-4 text-[#656d76] text-xs">

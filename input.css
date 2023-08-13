@@ -18,7 +18,7 @@ img {
 }
 
 @layer base {
-    html {
+    body {
         font-family: Nimbus Sans, system-ui, sans-serif;
     }
 }

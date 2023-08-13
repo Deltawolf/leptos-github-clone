@@ -16,7 +16,6 @@ pub fn App(cx: Scope) -> impl IntoView {
 
         // sets the document title
         <Title text="RustHub"/>
-        <Body class="font-nimbus"/>
 
         // content for this welcome page
         <Router>

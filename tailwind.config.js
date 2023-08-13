@@ -11,6 +11,7 @@ module.exports = {
                 'fontin': ['Fontin'],
                 'tangerine': ['Tangerine'],
                 'fontin-smallcaps': ['Fontin-smallcaps'],
+                'nimbus': ['"Nimbus Sans"'],
             },
 
             colors: {

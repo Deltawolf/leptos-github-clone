@@ -2,7 +2,8 @@
 @font-face { font-family: Fontin; src: url('/assets/fonts/Fontin-Regular.otf'); } 
 @font-face { font-family: Fontin; font-weight: bold; src: url('/assets/fonts/Fontin-Bold.otf'); } 
 @font-face { font-family: Fontin; font-weight: italic; src: url('/assets/fonts/Fontin-Italic.otf'); } 
-@font-face { font-family: Fontin-smallcaps; font-weight: italic; src: url('/assets/fonts/Fontin-SmallCaps.otf'); } 
+@font-face { font-family: Fontin-smallcaps; font-weight: italic; src: url('/assets/fonts/Fontin-SmallCaps.otf'); }
+
 
 @tailwind base;
 @tailwind components;
@@ -23,16 +24,20 @@ img {
     }
     .UnderlineNav-item {
 
-        @apply flex w-full h-full justify-center items-center rounded-md gap-4 m-0 hover:bg-[#e8ecef];
+        @apply flex w-full h-full justify-center items-center rounded-md gap-2 m-0 hover:bg-[#e8ecef];
 
     }
 
     .content-button {
-        @apply border-[1px] drop-shadow-md border-slate-300 bg-[#f6f8fa] rounded-md p-2
+        @apply border-[1px] hover:bg-[#e6f8fa] drop-shadow-md border-slate-300 bg-[#f6f8fa] rounded-md p-2
     }
 
     .repo-card {
         @apply border-t-[1px] border-slate-300 p-2 shadow-none whitespace-nowrap text-left flex justify-center items-center;
+    }
+
+    .project-radio {
+        @apply mr-1 appearance-none border-[1px] w-4 h-4 border-slate-500 rounded-full checked:border-4 checked:bg-white checked:border-blue-600
     }
 }
 .text-shadow {

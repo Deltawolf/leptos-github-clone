@@ -1,5 +1,6 @@
 pub mod app;
-pub mod octicons;
+mod tabs;
+mod components;
 
 use cfg_if::cfg_if;
 

@@ -17,6 +17,12 @@ img {
     max-width: 100%;
 }
 
+@layer base {
+    html {
+        font-family: Nimbus Sans, system-ui, sans-serif;
+    }
+}
+
 
 @layer components {
     .header-button {

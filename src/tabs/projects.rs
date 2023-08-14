@@ -167,7 +167,7 @@ fn Add_Project(cx: Scope, set_projects: WriteSignal<Vec<(String,String)>>) -> im
                         <span class="text-[1.5rem]">/</span>
                         <div class="flex flex-col h-full gap-1">
                             <span class="font-semibold text-sm">Repository name<sup>*</sup></span>
-                            <input node_ref=repo_ref class="border-[1px] border-slate-300 rounded-md h-8 px-1" type="text"/>
+                            <input node_ref=repo_ref class="border-[1px] border-slate-300 rounded-md h-8 px-1" type="text" required/>
                         </div>
                     </div>
                     <span class="text-sm">
@@ -265,7 +265,7 @@ fn Add_Project(cx: Scope, set_projects: WriteSignal<Vec<(String,String)>>) -> im
 
                 </section>
                 <button class="self-end font-medium text-sm text-white bg-[#1f883d] 
-                    rounded-md px-3 h-8" type="submit" value="Create repository"/>
+                    rounded-md px-3 h-8" type="submit" value="Create repository">Create repository</button>
             </div>
         </Form>
     }

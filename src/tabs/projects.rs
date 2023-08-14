@@ -156,7 +156,7 @@ fn Add_Project(cx: Scope, set_projects: WriteSignal<Vec<(String,String)>>) -> im
                     <div class="flex gap-2 items-end mb-4">
                         <div class="flex flex-col gap-1">
                             <span class="font-semibold text-sm">Owner<sup>*</sup></span>
-                            <button class="content-button text-sm flex items-center gap-1 flex-row h-8">
+                            <button type="button" class="content-button text-sm flex items-center gap-1 flex-row h-8">
                                 <div class="header-button p-0 overflow-hidden rounded-full w-6 h-6">
                                     <img class="w-full h-full object-center" src="/assets/ryanPic.png"/>
                                 </div>
@@ -207,8 +207,8 @@ fn Add_Project(cx: Scope, set_projects: WriteSignal<Vec<(String,String)>>) -> im
                         </div>
                     </div>
                 </section>
-                <section class="flex flex-col gap-4 border-b-[1px] border-slate-300 py-4">
 
+                <section class="flex flex-col gap-4 border-b-[1px] border-slate-300 py-4">
                     <span class="text-sm font-semibold">Initialize this repository with:</span>
                     <div class="inline-flex items-center gap-[0.75rem]">
                         <input class="mr-1 w-4"  type="checkbox"/> 
@@ -223,7 +223,7 @@ fn Add_Project(cx: Scope, set_projects: WriteSignal<Vec<(String,String)>>) -> im
                     <div class="inline-flex items-center gap-[0.75rem]">
                         <div class="flex flex-col gap-2">
                             <span class="font-bold text-sm">Add .gitignore</span>
-                            <button class="content-button inline-flex gap-1 items-center h-8 w-fit">
+                            <button type="button" class="content-button inline-flex gap-1 items-center h-8 w-fit">
                                 <span class="text-xs text-slate-500">
                                     .gitignore template:<span class="text-black">None</span>
                                 </span>
@@ -238,7 +238,7 @@ fn Add_Project(cx: Scope, set_projects: WriteSignal<Vec<(String,String)>>) -> im
                     <div class="inline-flex items-center gap-[0.75rem]">
                         <div class="flex flex-col gap-2">
                             <span class="font-bold text-sm">Choose a license</span>
-                            <button class="content-button inline-flex gap-1 items-center h-8 w-fit">
+                            <button type="button" class="content-button inline-flex gap-1 items-center h-8 w-fit">
                                 <span class="text-xs text-slate-500">
                                     License:<span class="text-black">None</span>
                                 </span>
@@ -264,7 +264,7 @@ fn Add_Project(cx: Scope, set_projects: WriteSignal<Vec<(String,String)>>) -> im
                 }
 
                 </section>
-                <input class="self-end font-medium text-sm text-white bg-[#1f883d] 
+                <button class="self-end font-medium text-sm text-white bg-[#1f883d] 
                     rounded-md px-3 h-8" type="submit" value="Create repository"/>
             </div>
         </Form>
